@@ -1,0 +1,71 @@
+.freelancer{
+    width: 100%;
+    height: 100%;
+    background-color: #263959;
+    display: flex;
+    align-items: center;
+    .freelancer-left{
+        width: 50%;
+        height: 100%;
+        background-image: url(../../assets/images/png/freelancer-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        img{
+            width: 100%;
+            height: 100%;
+            padding: 8%;
+        }
+    }
+
+    .freelancer-right{
+        width: 50%;
+        height: 100%;
+        padding: 10%;
+        h1{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            color: #FFFFFF;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 145%;
+            color: rgba(255, 255, 255, 0.65);
+            padding: 5% 0 10% 0;
+        }
+    }
+}
+
+@media(min-width: 0) and (max-width: 480px){
+    .freelancer{
+        text-align: center;
+        align-items: center;
+        display: block;
+        .freelancer-left{
+            width: 100%;
+        }
+        .freelancer-right{
+            width: 100%;
+            h1{
+                font-size: 28px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
+    
+@media(min-width: 481px) and (max-width: 768px){
+    .freelancer{
+        .freelancer-right{
+            h1{
+                font-size: 28px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}

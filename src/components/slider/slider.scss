@@ -1,0 +1,102 @@
+.carousel{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/images/png/carousel-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F4F8FD;
+    padding: 7%;
+    h1{
+        width: 30%;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        color: #263959;
+        margin: 0 auto;
+    }
+    .carousel-box{
+        padding: 8% 0;
+        .carousel-item{
+            width: 90%;
+            height: 100%;
+            background-color: white;
+            padding: 6%;
+            border-radius: 15px;
+            align-items: center;
+            .user{
+                display: flex;
+                img{
+                    border-radius: 50%;
+                    width: 65px;
+                    height: 65px;
+                }
+                .username{
+                    padding: 2% 5% 5% 5%;
+                    h4{
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 120%;
+                        color: #263959;
+                        padding: 2% 0;
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 120%;
+                        color: rgba(38, 57, 89, 0.6);
+                    }
+                }
+            }
+            .user-info{
+                padding: 4% 0;
+                h5{
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #263959;
+                    padding: 3% 0;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 145%;
+                    color: rgba(38, 57, 89, 0.65);
+                }
+            }
+            .star{
+                padding: 3% 0;
+                display: flex;
+                align-items: center;
+                gap: 5%;
+                .star-item * {
+                    cursor: pointer;
+                    transition: all .3s ease-in-out;
+                }
+                .star-item:hover{
+                    .star-icon * {
+                        fill: yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 0) and (max-width: 480px){
+    .carousel{
+        h1{
+            font-size: 28px;
+        }
+    }
+}
+    
+@media(min-width: 481px) and (max-width: 768px){
+    .carousel{
+        h1{
+            font-size: 28px;
+        }
+    }
+}

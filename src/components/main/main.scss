@@ -1,0 +1,74 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/images/png/main.png);
+    background-color: #263959;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25px;
+    .main-inbox{
+        padding: 0 5%;
+        align-items: center;
+    }
+    .main-left{
+        width: 45%;
+        position: absolute;
+        top: 23%;
+        left: 7%;
+        h1{
+            width: 100%;
+            height: 100%;
+            font-weight: 700;
+            font-size: 64px;
+            color: #F4F8FD;
+            margin: 1rem 0;
+        }
+    }
+}
+
+@media(min-width: 0) and (max-width: 480px){
+    .main{
+        background-image: url(../../assets/images/png/main-phone.png);
+        .main-left{
+            width: 90%;
+            position: absolute;
+            top: 13%;
+            left: 7%;
+            h1{
+                font-size: 34px;
+            }
+        }
+    }
+}
+    
+@media(min-width: 481px) and (max-width: 768px){
+    .main{
+        background-image: url(../../assets/images/png/main-tablet.png);
+        .main-left{
+            width: 45%;
+            position: absolute;
+            top: 23%;
+            left: 7%;
+            h1{
+                font-size: 34px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1034px){
+    .main-inbox{
+        padding: 0 0.5% !important;
+        font-size: 14px;
+        .main-left{
+            width: 45%;
+            position: absolute;
+            top: 23%;
+            left: 7%;
+            h1{
+                font-size: 54px;
+            }
+        }
+    }
+}
